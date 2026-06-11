@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockium — Survival</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">Block<span>ium</span></a>
+    <nav>
+      <a href="#features">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        <span>Features</span>
+      </a>
+      <a href="#ranks">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        <span>Ranks</span>
+      </a>
+      <a href="https://discord.blockium.net" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+        <span>Discord</span>
+      </a>
+      <a href="https://store.blockium.net" target="_blank" rel="noopener" class="store">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span>Store</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Minecraft Survival · Java Edition</p>
+    <h1 class="hero-title">Blockium<br><em>Survival</em></h1>
+    <p class="hero-sub">A no-nonsense survival experience. No pay-to-win. No bloat. Just vanilla-adjacent gameplay with a tight community and fair moderation.</p>
+
+    <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
+      <div class="ip-card" id="ipCard" title="Click to copy IP">
+        <div class="ip-label">play.blockium.net</div>
+        <button class="ip-copy-btn" aria-label="Copy server IP">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          copy
+        </button>
+      </div>
+      <a href="https://discord.blockium.net" target="_blank" rel="noopener" class="discord-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+        discord.blockium.net
+      </a>
+    </div>
+  </div>
+
+  <!-- STATUS CARD -->
+  <div class="status-card">
+    <div class="status-header">
+      <span class="status-title">Server Status</span>
+      <div class="status-dot" id="statusDot"></div>
+    </div>
+    <div class="status-body">
+      <div class="stat-row">
+        <span class="stat-label">IP</span>
+        <span class="stat-value" style="font-size:11px;">play.blockium.net</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Online</span>
+        <span class="stat-value online" id="playerCount">—</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Ping</span>
+        <span class="stat-value ping" id="pingDisplay">—</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Version</span>
+        <span class="stat-value" id="versionDisplay">—</span>
+      </div>
+      <div class="players-list" id="playersList">
+        <p class="players-loading">Fetching players</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-section">
+  <div class="stats-inner">
+    <div class="stat-block">
+      <div class="stat-block-num" id="totalJoined">—</div>
+      <div class="stat-block-label">Total players joined</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-block-num">24<span>/7</span></div>
+      <div class="stat-block-label">Server uptime</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-block-num">Java<span> 1.21</span></div>
+      <div class="stat-block-label">Minecraft edition</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-block-num"><span>~</span>0<span>ms</span></div>
+      <div class="stat-block-label">Avg latency</div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <p class="section-eyebrow">What's included</p>
+  <h2 class="section-title">Built for players, not wallets</h2>
+  <div class="features-grid">
+    <div class="feature-cell">
+      <div class="feature-icon">⛏</div>
+      <p class="feature-name">Survival World</p>
+      <p class="feature-desc">A persistent, always-on survival world with periodic resets announced far in advance. Your progress is yours.</p>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">🏠</div>
+      <p class="feature-name">Land Claiming</p>
+      <p class="feature-desc">Protect your builds with a simple claim system. No grief, no rollback drama — just protected land.</p>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">⚔</div>
+      <p class="feature-name">Economy</p>
+      <p class="feature-desc">Player-driven economy using in-game currency. Shops, trades, and auctions — no real-money advantage.</p>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">🗺</div>
+      <p class="feature-name">Live Map</p>
+      <p class="feature-desc">Browse a real-time web map of the world — see builds, biomes, and player positions as they happen.</p>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">🤝</div>
+      <p class="feature-name">Active Community</p>
+      <p class="feature-desc">A moderated Discord and in-game chat. Toxic behavior gets removed fast — staff actually respond.</p>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">💾</div>
+      <p class="feature-name">Daily Backups</p>
+      <p class="feature-desc">The server is backed up daily. If something breaks, we can fix it — no questions asked.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RANKS -->
+<section class="ranks" id="ranks">
+  <div class="ranks-inner">
+    <p class="section-eyebrow">Supporter ranks</p>
+    <h2 class="section-title">Help keep the lights on</h2>
+    <div class="ranks-grid">
+      <div class="rank-card">
+        <div class="rank-badge">Wanderer</div>
+        <div class="rank-price">Free <small>(default)</small></div>
+        <ul class="rank-perks">
+          <li>Access to all survival worlds</li>
+          <li>Basic /sethome (2 homes)</li>
+          <li>Chat + Discord access</li>
+        </ul>
+        <a href="https://store.blockium.net" class="rank-cta" target="_blank" rel="noopener">Get started</a>
+      </div>
+      <div class="rank-card">
+        <div class="rank-badge">Scout</div>
+        <div class="rank-price">$5 <small>/ one-time</small></div>
+        <ul class="rank-perks">
+          <li>5 /sethome slots</li>
+          <li>Custom chat prefix</li>
+          <li>Priority queue on full server</li>
+        </ul>
+        <a href="https://store.blockium.net" class="rank-cta" target="_blank" rel="noopener">Buy rank</a>
+      </div>
+      <div class="rank-card featured">
+        <div class="rank-badge">Guardian</div>
+        <div class="rank-price">$12 <small>/ one-time</small></div>
+        <ul class="rank-perks">
+          <li>10 /sethome slots</li>
+          <li>Colored name in chat</li>
+          <li>Access to cosmetic kits</li>
+          <li>/nick command</li>
+        </ul>
+        <a href="https://store.blockium.net" class="rank-cta" target="_blank" rel="noopener">Buy rank</a>
+      </div>
+      <div class="rank-card">
+        <div class="rank-badge">Elder</div>
+        <div class="rank-price">$25 <small>/ one-time</small></div>
+        <ul class="rank-perks">
+          <li>Unlimited /sethome</li>
+          <li>Particle effects</li>
+          <li>Early access to new features</li>
+          <li>Exclusive Discord channel</li>
+        </ul>
+        <a href="https://store.blockium.net" class="rank-cta" target="_blank" rel="noopener">Buy rank</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2025 Blockium — Not affiliated with Mojang or Microsoft</span>
+    <div class="footer-links">
+      <a href="https://store.blockium.net" target="_blank" rel="noopener">Store</a>
+      <a href="https://discord.blockium.net" target="_blank" rel="noopener">Discord</a>
+      <a href="#">Rules</a>
+      <a href="#">Appeal</a>
+    </div>
+  </div>
+</footer>
+
+<div class="copy-toast" id="copyToast">Copied to clipboard</div>
+
+<!-- External JS -->
+<script src="script.js"></script>
+</body>
+</html>
