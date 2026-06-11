@@ -30,10 +30,7 @@ async function fetchStatus() {
     document.getElementById('pingDisplay').textContent = `${pingMs}ms`;
     document.getElementById('versionDisplay').textContent = ver;
 
-    const totalJoinedEl = document.getElementById('totalJoined');
-    if (totalJoinedEl) {
-      totalJoinedEl.textContent = max > 0 ? `${max}+` : '—';
-    }
+
 
     const list = document.getElementById('playersList');
     const names = d.players?.list ?? [];

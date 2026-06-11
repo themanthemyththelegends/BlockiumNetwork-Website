@@ -365,7 +365,7 @@
     margin: 0 auto;
     padding: 0 24px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .stat-block {
@@ -377,6 +377,8 @@
 
   .stat-block:first-child { padding-left: 0; }
   .stat-block:last-child  { border-right: none; padding-right: 0; }
+  
+  .stats-inner { justify-items: center; }
 
   .stat-block-num {
     font-family: var(--mono);
@@ -630,9 +632,7 @@
   /* responsive */
   @media (max-width: 900px) {
     .hero { grid-template-columns: 1fr; gap: 32px; }
-    .stats-inner { grid-template-columns: repeat(2, 1fr); }
-    .stat-block:nth-child(2) { border-right: none; }
-    .stat-block:nth-child(3) { padding-left: 0; border-right: 1px solid var(--border); }
+    .stats-inner { grid-template-columns: repeat(3, 1fr); }
     .features-grid { grid-template-columns: 1fr 1fr; }
     .ranks-grid { grid-template-columns: 1fr 1fr; }
   }
@@ -730,10 +730,6 @@
 <!-- STATS BAR -->
 <div class="stats-section">
   <div class="stats-inner">
-    <div class="stat-block">
-      <div class="stat-block-num" id="totalJoined">—</div>
-      <div class="stat-block-label">Total players joined</div>
-    </div>
     <div class="stat-block">
       <div class="stat-block-num">24<span>/7</span></div>
       <div class="stat-block-label">Server uptime</div>
